@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agmarco - Order Your Food</title>
+    <style>
+        /* Reset default browser styles */
+        body, h1, h2, h3, p, ul, li, form {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+
+        .hero a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .hero a p {
+            margin-left: 50px;
+        }
+
+        /* Form Section Styles */
+        .order {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .order h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .order p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .order form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .order label {
+            margin-bottom: 5px;
+        }
+
+        /* Add padding to text input and textarea */
+        .order input[type="text"],
+        .order input[type="email"],
+        .order input[type="tel"],
+        .order textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .order button[type="submit"] {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .order button[type="submit"]:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            /* Add responsive styles here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hero">
+                <a href="index.html">
+                    <p>go back</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="order">
+        <h2>Place Your Order</h2>
+        <p>Fill out the form below to send us your order.</p>
+        <form action="submit_order.php" method="post">
+            <!-- Order form fields here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>    
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="food">Food Selection:</label>
+            <textarea id="food" name="food" rows="4" required></textarea>
+            
+            <button type="submit" class="cta-button">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Agmarco. All rights reserved.</p>
+    </footer>
+</body>
+</html>

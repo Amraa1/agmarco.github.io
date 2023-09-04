@@ -1,0 +1,361 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* Header Styles */
+header {
+    line-height: 12vh;
+    font-size: 2.5vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav:first-child {
+    margin-left: 20px;
+}
+
+header nav:last-child {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 10vh;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #191919;
+    padding: 7px;
+    border-radius: 8%;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    background: #d50303;
+}
+
+#logo-link {
+    color: #121010;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+#myVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #dfd8d8;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 10px 10vw 20px 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero span {
+    margin-left: 6vw;;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    max-width: 30vw;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Services Section Styles */
+.services {
+    text-align: center;
+    background-color: #f5f5f5; /* Background color for the services section */
+    margin: 5vh auto 5vh auto;
+    max-width: 1000px;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #333; /* Text color */
+}
+
+.services p {
+    font-size: 1.1rem;
+    color: #666; /* Subtle text color */
+}
+
+#services-subheader {
+    max-width: 500px;
+    margin: 20px auto 40px auto;
+}
+
+/* Style for individual service items */
+.service {
+    margin-bottom: 40px;
+    background-color: #fff; /* Background color for service items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left; /* Align text left within each service item */
+    display: grid;
+    grid-template-columns: 125px auto;
+    align-items: center;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Service title color */
+}
+
+.service-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.service-text {
+    font-size: 1rem;
+    color: #666; /* Service description color */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;    
+}
+
+/* Style the specific services you offer */
+.service.frozen-food {
+    background-color: #ffcccc; /* Background color for frozen food service */
+}
+
+.service.import {
+    background-color: #ccffcc; /* Background color for import service */
+}
+
+.service.distribution {
+    background-color: #ccccff; /* Background color for distribution service */
+}
+
+/* our menu/productssection */
+
+.menu {
+    text-align: center;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item img:hover {
+    opacity: 0.4;
+    background: #fff;
+    
+}
+
+.menu-background-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: black;
+    font-size: 3vh;
+}
+
+.menu-item-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* About section */
+.about {
+    text-align: center;
+    background-color: #f5f5f5; /* Background color for the "About Us" section */
+    padding: 40px 0; /* Add padding to the top and bottom of the section */
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto; /* Center-align the images and add spacing */
+    border-radius: 5px; /* Add a subtle border radius to the images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+/* Add a shape or decorative element below the text */
+.about:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c; /* Accent color */
+    margin: 20px auto; /* Center-align the shape */
+    border-radius: 5px; /* Add a rounded shape */
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    /* Add responsive styles here */
+    .hero {
+        padding: 100px 50px;
+    }
+    header {
+        padding: 10px 10px;
+        line-height: 10vh;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 125px 30px;
+    }
+    header nav {
+        display: block;
+    }
+    .logo {
+        
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+    header {
+        line-height: 10vh;
+    }
+}
