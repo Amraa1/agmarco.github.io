@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="logo" href="image\favicon.ico">
     <script src="https://kit.fontawesome.com/3ad3045592.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a id="logo-link" href="index.html">
-                    <img src="image\agmarco_logo_transparent_background.png" alt="Agmarco Logo">
-                    <h1>Agmarco</h1>
-                </a>
-            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a id="logo-link" href="index.html">
+                <img src="image\agmarco_logo_transparent_background.png" alt="Agmarco Logo">
+                <h1>Agmarco</h1>
+            </a>
             <ul class="nav-links">
-                <li><a href="#welcome">Home</a></li>
+                <li><a class="active" href="#welcome">Home</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#product">Products</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -33,13 +36,16 @@
             <source src="video\354416994_989150522085109_716277516509325469_n.mp4" type="video/mp4">
         </video>
         <div class="hero-text">
-            <span>
+            <div>
                 <h2>Welcome to Agmarco</h2>
                 <p>Your Trusted Partner for Food Shipping Services</p>
-            </span>
+            </div>
             <a href="order.html" class="cta-button">Send Your Order</a>
         </div>
     </section>
+    <div class="box">
+        <hr>
+    </div>
 
     <!-- Service section -->
     <section class="services" id="service">
